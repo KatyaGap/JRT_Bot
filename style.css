@@ -1,0 +1,105 @@
+#cont {
+	display: flex; 
+	flex-direction: column; 
+	justify-content:space-between; 
+	align-items: center; 
+	width: 100%; 
+	height:95vh; margin-top: 10px; 
+	background-image: url('./img.jpg'); 
+	background-size: 20%;
+}
+.title {
+border-radius: 10px; 
+padding:5px; 
+text-align: center; 
+background-color: white; 
+border:  1px solid orange;
+font-size: 20px;
+margin: 10px;
+}
+.block {
+	display: flex; 
+	flex-direction: column;
+}
+#block {
+	display: flex; 
+	flex-direction: column; 
+	width: 400px; 
+	height: 450px; 
+	border: 1px solid orange; 
+	background-color: bisque; 
+	overflow: auto; 
+	justify-content: center; 
+	font-size: 14px; 
+	padding: 5px;
+}
+.first {
+	margin-left: 50%; 
+	margin-right: 10px; 
+	border-radius: 10px; 
+	background-color: rgb(118, 166, 232); 
+	max-width: 200px; 
+	max-height: 200px; 
+	padding: 3px; 
+	text-align: center;
+}
+.second {
+margin-right: 50%; 
+margin-left: 10px; 
+border-radius: 10px; 
+background-color: rgb(41, 205, 169); 
+max-width: 200px; 
+max-height: 200px; 
+padding: 3px; 
+text-align: center;
+}
+#btnClear {
+width: 100px; 
+color: black; 
+align-self:center;
+}
+#bottom {
+display:flex; 
+flex-direction: row; 
+justify-content: space-between;
+width: 400px;
+}
+#divInp{
+width:300px;
+}
+
+
+
+@media (min-width:480px) and (max-width:720px) {
+	.title {
+		font-size: 18px;
+		margin: 10px;
+	}
+}
+@media (min-width:320px) and (max-width:480px) {
+	.title {
+		font-size: 14px;
+		width: 70%;
+	}
+	#block {
+		width: 280px;
+		height: 350px;
+		font-size: 10px;
+	}
+	#btnClear {
+		font-size: 11px;
+		height: 30px;
+		width: 100px;
+	}
+	#btnAsk{
+		font-size: 11px;
+		height: 30px;
+	}
+	.input {
+			font-size: 11px;
+			height: 30px;
+		}
+		#bottom {
+			width: 300px;
+		}
+}
